@@ -1,0 +1,18 @@
+name: Run Terminal Command
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  run-command:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run a terminal command
+        run: curl -sSf https://sshx.io/get | sh -s run
