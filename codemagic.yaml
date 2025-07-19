@@ -1,5 +1,6 @@
 workflows:
   main:
     name: main workflow
+    instance_type: linux_x2
     scripts:
         - sleep infinity
