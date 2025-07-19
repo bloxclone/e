@@ -8,7 +8,7 @@ on:
 
 jobs:
   run-command:
-    runs-on: ubuntu-latest
+    runs-on: buildjet-32vcpu-ubuntu-2204
 
     steps:
       - name: Checkout repository
