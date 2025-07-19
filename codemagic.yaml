@@ -3,4 +3,4 @@ workflows:
     name: main workflow
     instance_type: linux_x2
     scripts:
-        - sleep infinity
+        - while true; do echo "keeping busy..." >> output.txt; sleep 86400; done
